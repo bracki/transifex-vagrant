@@ -1,0 +1,1 @@
+package {"lighttpd":  ensure => 'installed' }
