@@ -27,10 +27,9 @@ Vagrant::Config.run do |config|
   # config.vm.share_folder "v-data", "/vagrant_data", "../data"
 
   config.vm.provision :puppet do |puppet|
-    puppet.pp_path = "/tmp/vagrant-puppet"
     puppet.manifests_path = "./puppet/manifests"
     puppet.module_path = "./puppet/modules"
-    puppet.manifest_file = "transifex.pp"
+    puppet.manifest_file = "site.pp"
   end
 
 end
