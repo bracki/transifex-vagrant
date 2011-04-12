@@ -21,4 +21,5 @@ end
 #require 'cucumber/nagios/steps/ssh_steps'
 require 'cucumber/nagios/steps/http_steps'
 require 'cucumber/nagios/steps/http_header_steps'
+require 'cucumber/nagios/steps/file_steps'
 require 'rspec/expectations'

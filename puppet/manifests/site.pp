@@ -1,1 +1,2 @@
+include python
 include lighttpd
