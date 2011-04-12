@@ -11,7 +11,8 @@ class python {
         require => Package["python-setuptools"],
         #subscribe => Package["python-setuptools"],
     }
-    exec {"virtualenv /home/vagrant/virtualenv":
-        path => "/usr/local/bin:/usr/bin:/bin",
-    }
+#    exec {"virtualenv /home/vagrant/virtualenv":
+#        path => "/usr/local/bin:/usr/bin:/bin",
+#        creates => "/home/vagrant/virtualenv",
+#    }
 }
