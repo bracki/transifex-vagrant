@@ -15,6 +15,7 @@ Then /^a virtualenv should be created at "([^"]*)"$/ do |path|
     | vagrant  | vagrant | 
   })
   steps %Q{
-    Then a directory named '#{path}' should exist
+    When I run "test -d #{path}"
+    Then it should have exitcode 0
   }
 end
