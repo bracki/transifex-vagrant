@@ -16,3 +16,4 @@ Feature: Python
       | django       | 1.2.3   |
       | gunicorn     | 0.12.1  |
       | contact-form | 0.3     |
+      | PIL          | 1.1.7   |
