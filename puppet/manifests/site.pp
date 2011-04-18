@@ -1,6 +1,12 @@
 include python
 include lighttpd
 
+vcsrepo { "/home/vagrant/transifex":
+  ensure => present,
+  provider => hg,
+  source => "http://bitbucket.org/bracki/transifex",
+}
+
 # Dependencies copied straight from Transifex's requirements.txt
 python::virtualenv {
     "/home/vagrant/virtualenv":

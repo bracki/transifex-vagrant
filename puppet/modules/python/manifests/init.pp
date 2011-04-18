@@ -4,6 +4,7 @@ class python {
         "python": ensure => latest;
         "python-dev": ensure => latest;
         "python-setuptools": ensure => installed;
+        "mercurial": ensure => installed;
     }
     exec {"easy_install virtualenv":
         path => "/usr/local/bin:/usr/bin:/bin",
@@ -11,8 +12,4 @@ class python {
         require => Package["python-setuptools"],
         #subscribe => Package["python-setuptools"],
     }
-#    exec {"virtualenv /home/vagrant/virtualenv":
-#        path => "/usr/local/bin:/usr/bin:/bin",
-#        creates => "/home/vagrant/virtualenv",
-#    }
 }
